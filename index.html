@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIMER</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Set Timer</h1>
+      <div class="main">
+        <div class="timer">
+          <input type="number" id="hrs" placeholder="Hrs" />
+        </div>
+        <div class="timer">
+          <input type="number" id="mins" placeholder="Mins" />
+        </div>
+        <div class="timer">
+          <input type="number" id="secs" placeholder="Sec" />
+        </div>
+      </div>
+      <div id="btns">
+        <button
+          id="start"
+          style="
+            background-color: rgba(3, 194, 3, 0.555);
+            border-color: rgba(3, 194, 3, 0.555);
+          "
+        >
+          Start
+        </button>
+        <button
+          id="stop"
+          style="
+            background-color: rgba(194, 18, 12, 0.685);
+            border-color: rgba(194, 18, 12, 0.685);
+          "
+        >
+          Stop
+        </button>
+        <button
+          id="reset"
+          style="
+            background-color: rgba(194, 194, 12, 0.747);
+            border-color: rgba(194, 194, 12, 0.747);
+          "
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

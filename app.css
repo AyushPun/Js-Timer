@@ -1,0 +1,85 @@
+* {
+  font-family: "Roboto Slab", serif;
+  background: rgb(231, 227, 227);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 30px;
+  font-weight: 390;
+  margin-left: 35%;
+}
+
+.container {
+  margin: 170px;
+}
+
+@media (max-width: 499px) {
+  .container {
+    transform: scale(0.6);
+  }
+}
+
+.main {
+  display: flex;
+  width: 500px;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.timer {
+  width: 32%;
+  background-color: #96f5e0;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px 1px #86ebd5;
+}
+
+.timer input {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5em;
+  height: 90%;
+  box-sizing: border-box;
+  background-color: unset;
+  border: none;
+}
+
+::placeholder {
+  color: #1c7c6733;
+}
+
+#btns {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  margin-left: 35%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 50%;
+  border-radius: 50px;
+  border-color: #86ebd5;
+  box-sizing: 1em;
+  font-size: 1em;
+  color: rgb(245, 245, 245);
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
