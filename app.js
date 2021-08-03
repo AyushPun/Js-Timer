@@ -19,15 +19,6 @@ srt.addEventListener("click", () => {
   srt.disabled = true;
   stp.disabled = false;
 
-  if (m.value > 59) {
-    let a = parseInt(m.value) % 60;
-    let b = Math.floor(parseInt(m.value) / 60);
-    if (isNaN(parseInt(h.value))) {
-      h.value = 0;
-    }
-    h.value = parseInt(h.value) + b;
-    m.value = a;
-  }
   if (s.value > 59) {
     let a = parseInt(s.value) % 60;
     let b = Math.floor(parseInt(s.value) / 60);
@@ -37,6 +28,17 @@ srt.addEventListener("click", () => {
     m.value = parseInt(m.value) + b;
     s.value = a;
   }
+  
+  if (m.value > 59) {
+    let a = parseInt(m.value) % 60;
+    let b = Math.floor(parseInt(m.value) / 60);
+    if (isNaN(parseInt(h.value))) {
+      h.value = 0;
+    }
+    h.value = parseInt(h.value) + b;
+    m.value = a;
+  }
+  
 
   interval = setInterval(() => {
     if (s.value != 0) {
